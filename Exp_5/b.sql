@@ -6,6 +6,7 @@ SELECT * FROM employee;
 DECLARE
     p_id employee.id%type;
     p_salary employee.salary%type;
+    
 PROCEDURE incr IS
 BEGIN
     SELECT id, salary INTO p_id, p_salary FROM employee WHERE salary > 10000;

@@ -1,3 +1,5 @@
+set serveroutput on;
+set verify off;
 SELECT * FROM employee;
 DECLARE
     employee_ID CHAR(5);

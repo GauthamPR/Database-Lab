@@ -11,8 +11,7 @@ BEGIN
         WHERE circulation.book_no IS NULL;
     dbms_output.put_line('Avg: ' || p_avg_cost);
     IF p_avg_cost > :NEW.cost THEN
-        raise_application_error(-20000
-            , 'Cost less than average value of available');
+        raise_application_error(-20000, 'Cost less than average value of available');
     END IF;
 END;
 /

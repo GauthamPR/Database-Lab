@@ -1,4 +1,3 @@
-
 SELECT * FROM book;
 SELECT * FROM circulation;
 CREATE OR REPLACE TRIGGER allow_entry
